@@ -12,7 +12,7 @@ button{
     border: 1px solid cornflowerblue;
 }
 .page{
-    background-image: url('bgImg.jpg');
+    background-image: url('bgImg-min.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
