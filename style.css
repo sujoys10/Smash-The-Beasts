@@ -22,7 +22,9 @@ button{
     width: 100vw;
     text-align: center;
 }
-
+.home {
+    transform: translateY(-50%);
+}
 .intro {
     font-size: 40px;
 }
@@ -54,6 +56,10 @@ button{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+.tile:hover {
+    color: none;
 }
 
 button:focus{
@@ -169,6 +175,10 @@ button:focus{
         width: 60px;
         height: 60px;
     }
+    #start_btn{
+        position: absolute;
+        bottom: 120px;
+    }
 }
 
 @media screen and (max-width: 400px){
@@ -189,5 +199,9 @@ button:focus{
         right: 7.5px;
         width: 45px;
         height: 45px;
+    }
+    #start_btn{
+        position: absolute;
+        bottom: 70px;
     }
 }
