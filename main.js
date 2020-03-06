@@ -38,7 +38,7 @@ function setCanvas(){
 }
 
 function releseBeasts(){
-    let numberOfBeasts = Math.floor(Math.random()*5)+1;
+    let numberOfBeasts = Math.floor(Math.random()*7)+1;
     for(let i=0;i<numberOfBeasts;i++){
         let index = Math.floor(Math.random()*16);
         let beast = Math.floor(Math.random()*4)
@@ -59,7 +59,7 @@ function startGame(){
     startTime = new Date().getTime();
     releseBeasts();
     let interval = setInterval(function(){
-        if(new Date().getTime() - startTime > 10000){
+        if(new Date().getTime() - startTime > 7200){
             clearInterval(interval);
             bar1.set(0);
             clearInterval(roundTime);
@@ -69,7 +69,7 @@ function startGame(){
         holes.forEach(hole => hole.innerHTML = '');
         holes = [];
         releseBeasts();
-    }, 2000);
+    }, 1200);
         
 }
 
