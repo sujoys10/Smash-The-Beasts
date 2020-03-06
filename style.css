@@ -1,19 +1,29 @@
 body{
-    font-family: 'Shojumaru', cursive;
-    color: #fff;
+    font-family: cursive;
     padding: 0;
     margin: 0;
+    background-color: whitesmoke;
+    text-transform: uppercase;
 }
 
 
 button{
     padding: 8px 16px;
     background: whitesmoke;
-    border: 1px solid cornflowerblue;
+    border: 1px solid black;
 }
+
+.heading {
+    text-align: center;
+}
+
+.heading h1 {
+    font-size: 20px;
+    margin: 0;
+    padding: 16px;
+}
+
 .page{
-    background-image: url('bgImg-min.jpg');
-    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,8 +40,8 @@ button{
 }
 
 .btn {
+    font-family: cursive;
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
-    border: none;
 }
 
 #game{
@@ -56,6 +66,7 @@ button{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    
 }
 
 .tile:hover {
@@ -69,9 +80,9 @@ button:focus{
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    box-shadow: -2px -2px 5px #fff, 2px 2px 12px #000;
     -webkit-transition: transform 0.5s; /* For Safari 3.1 to 6.0 */
     transition: transform 0.5s;
-
 }
 .beasts:hover{
     transform: scale(1.05,1.05);
@@ -95,6 +106,7 @@ button:focus{
 
 .timer {
     position: absolute;
+    font-weight: bold;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -103,11 +115,11 @@ button:focus{
     cursor: pointer;
     background: none;
     border: none;
-    color: #fff;
     padding: 32px 0;
     font-size: 24px;
     transition: transform 0.5s;
 }
+
 #score{
     margin: 0;
     font-size: 18px;
@@ -164,6 +176,7 @@ button:focus{
     .tiles{
         width: 372px;
         height: 372px;
+        margin: 0;
     }
     .tile{
         width: 75px;
@@ -177,7 +190,10 @@ button:focus{
     }
     #start_btn{
         position: absolute;
-        bottom: 50px;
+        background: white;
+        bottom: 0px;
+        width: 100%;
+        padding: 12px 0;
     }
 }
 
@@ -193,6 +209,8 @@ button:focus{
     .dashboard{
         width: 350px;
         margin-left: 0;
+        margin-bottom: 0;
+        margin-top: 0;
     }
     .smash{
         bottom: 7.5px;
@@ -202,6 +220,10 @@ button:focus{
     }
     #start_btn{
         position: absolute;
-        bottom: 50px;
+        bottom: 0px;
+        width: 100%;
+        padding: 8px 0;
+        font-size: 18px;
     }
+
 }

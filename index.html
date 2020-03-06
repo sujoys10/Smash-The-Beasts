@@ -6,11 +6,15 @@
     <title>Smash The Beasts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Shojumaru" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" type="text/css" href="loading-bar/loading-bar.css"/>
     <script type="text/javascript" src="loading-bar/loading-bar.js"></script>
 </head>
 <body>
+    <div class="heading" style="background: white;">
+        <h1>Smash The Beasts</h1>
+    </div>
     <div id="intro-page">
         <div class="page">
             <div class="home">
@@ -23,7 +27,7 @@
         <div id="game" class="page">
             <div class="dashboard">
                 <div id="timer" data-preset="circle" class="label-center"><span class="timer">Timer</span></div>
-                <button id="start_btn" onclick="startGame()">Start</button>
+                <button id="start_btn" class="btn" onclick="startGame()">Start</button>
                 <div>
                     <h3>Score</h3>
                     <p id="score">0</p>
@@ -51,7 +55,7 @@
     </div>
 
     <div id="result-page" style="display:none">
-        <div class="page">
+        <div class="page" >
             <h1 id="your_score">Your Score</h1>
             <h1 id="final_score"></h1>
             <div class="score_sheet">
