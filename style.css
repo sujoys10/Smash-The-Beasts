@@ -172,6 +172,10 @@ button:focus{
     content:'';
 }
 
+.result_container {
+    margin-top: -25%;
+}
+
 @media screen and (max-width: 450px){
     .tiles{
         width: 372px;
@@ -222,7 +226,7 @@ button:focus{
         position: absolute;
         bottom: 0px;
         width: 100%;
-        padding: 8px 0;
+        padding: 10px 0;
         font-size: 18px;
     }
 
