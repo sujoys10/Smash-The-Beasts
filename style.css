@@ -145,6 +145,7 @@ button:focus{
 
 #your_score{
     margin: 0;
+    font-size: 30px;
 }
 .score_sheet{
     display: flex;
@@ -235,7 +236,6 @@ button:focus{
         width: 350px;
         height: 100px;
         margin-left: 0;
-        margin-bottom: 15px;
         margin-top: 0;
     }
     .smash{

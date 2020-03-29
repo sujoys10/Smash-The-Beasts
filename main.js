@@ -6,7 +6,6 @@ const hits = Array.from(document.querySelectorAll('.hit'));
 const intro_page = document.getElementById('intro-page');
 const game_page = document.getElementById('game-page');
 const result_page = document.getElementById('result-page');
-const audio = document.querySelector('#sound');
 
 let score = [0, 0, 0, 0];
 let totalScore = 0;
@@ -75,7 +74,6 @@ function startGame(){
 }
 
 function giveSmash(parent){
-    audio.play();
     const node = document.createElement('img');
     node.setAttribute("src", "punch.png");
     node.setAttribute("class", "smash");
