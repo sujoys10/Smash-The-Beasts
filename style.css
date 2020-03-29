@@ -1,5 +1,6 @@
 body{
     font-family: cursive;
+    height: 100vh;
     padding: 0;
     margin: 0;
     background-color: whitesmoke;
@@ -110,6 +111,10 @@ button:focus{
     top: 50%;
     transform: translateY(-50%);
 }
+
+
+
+
 #start_btn{
     font-family: 'Shojumaru', cursive;
     cursor: pointer;
@@ -173,10 +178,20 @@ button:focus{
 }
 
 .result_container {
-    margin-top: -25%;
+    margin-top: -6%;
 }
 
 @media screen and (max-width: 450px){
+    .intro {
+        font-size: 30px;
+    }
+    .dashboard {
+        height: 100px;
+    }
+    #timer {
+        height: 80px !important;
+        width: 80px !important;
+    }
     .tiles{
         width: 372px;
         height: 372px;
@@ -199,6 +214,10 @@ button:focus{
         width: 100%;
         padding: 12px 0;
     }
+
+    .result_container {
+        margin-top: -25%;
+    }
 }
 
 @media screen and (max-width: 400px){
@@ -212,8 +231,9 @@ button:focus{
     }
     .dashboard{
         width: 350px;
+        height: 100px;
         margin-left: 0;
-        margin-bottom: 0;
+        margin-bottom: 15px;
         margin-top: 0;
     }
     .smash{
