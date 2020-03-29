@@ -41,7 +41,6 @@ button{
 }
 
 .btn {
-    font-family: cursive;
     box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
 }
 
@@ -116,7 +115,7 @@ button:focus{
 
 
 #start_btn{
-    font-family: 'Shojumaru', cursive;
+    font-family: 'Shojumaru';
     cursor: pointer;
     background: none;
     border: none;
@@ -208,7 +207,7 @@ button:focus{
         height: 60px;
     }
     #start_btn{
-        position: absolute;
+        position: fixed;
         background: white;
         bottom: 0px;
         width: 100%;
@@ -221,6 +220,9 @@ button:focus{
 }
 
 @media screen and (max-width: 400px){
+    .intro {
+        font-size: 27px;
+    }
     .tiles{
         width: 332px;
         height: 332px;
@@ -243,9 +245,6 @@ button:focus{
         height: 45px;
     }
     #start_btn{
-        position: absolute;
-        bottom: 0px;
-        width: 100%;
         padding: 10px 0;
         font-size: 18px;
     }

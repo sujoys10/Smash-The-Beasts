@@ -1,4 +1,4 @@
-const items = ["kancha.jpg", "kilbish.webp", "white walker.jpg", "thanos.jpg"];
+const items = ["kancha.jpg", "kilbish.JPG", "white walker.jpg", "thanos.jpg"];
 const tiles = Array.from(document.querySelectorAll('.tile'));
 const beasts = Array.from(document.querySelectorAll('.beasts'));
 const start_btn = document.getElementById('start_btn');
@@ -6,6 +6,7 @@ const hits = Array.from(document.querySelectorAll('.hit'));
 const intro_page = document.getElementById('intro-page');
 const game_page = document.getElementById('game-page');
 const result_page = document.getElementById('result-page');
+const audio = document.querySelector('#sound');
 
 let score = [0, 0, 0, 0];
 let totalScore = 0;
@@ -74,6 +75,7 @@ function startGame(){
 }
 
 function giveSmash(parent){
+    audio.play();
     const node = document.createElement('img');
     node.setAttribute("src", "punch.png");
     node.setAttribute("class", "smash");
